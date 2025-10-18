@@ -5,7 +5,7 @@ export async function HelloHttp(request: HttpRequest, context: InvocationContext
 
     const name = request.query.get('name') || await request.text() || 'world';
 
-    return { body: `Hello, ${name}!, this is my first azure function` };
+    return { body: `Hello, ${name}!, this is the second day so lets go ` };
 };
 
 app.http('HelloHttp', {
